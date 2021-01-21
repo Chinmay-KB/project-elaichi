@@ -1,7 +1,7 @@
 import 'package:auto_route/auto_route_annotations.dart';
-import 'package:elaichi/src/ui/views/signin/signin_view.dart';
-import 'package:elaichi/src/ui/views/signup/signup_view.dart';
-import 'package:elaichi/views.dart';
+import 'package:elaichi/ui/views/club/club_view.dart';
+import 'package:elaichi/ui/views/home/home_view.dart';
+import 'package:elaichi/ui/views/startup/startup_view.dart';
 
 /// $Router is used to define the routes for generation using
 /// [auto_route](https://pub.dev/packages/auto_route).
