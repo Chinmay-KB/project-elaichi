@@ -34,7 +34,7 @@ class ContactCard extends StatelessWidget {
             ),
             const Icon(
               Icons.call,
-              color: AppColors.overlineText,
+              color: AppColors.newEventBtn,
             ),
           ],
         );

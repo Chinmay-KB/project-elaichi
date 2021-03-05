@@ -23,66 +23,67 @@ class ClubEventItemCard extends StatelessWidget {
         aspectRatio: 368 / 177,
         child: Padding(
           padding: const EdgeInsets.all(10),
-          child: GestureDetector(
-            onTap: onTap,
-            child: Card(
-              elevation: 0.0,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(8),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Row(
-                  children: [
-                    Expanded(
-                      flex: 2,
-                      child: Padding(
-                        padding: const EdgeInsets.only(right: 13.0),
-                        child: Image.asset(event.picture),
+          child: Card(
+            elevation: 0.0,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(8),
+            ),
+            child: Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Row(
+                children: [
+                  Expanded(
+                    flex: 2,
+                    child: Padding(
+                      padding: const EdgeInsets.only(right: 13.0),
+                      child: Image.asset(_event.picture),
+                    ),
+                  ),
+                  Expanded(
+                    flex: 4,
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 8.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            _event.organizer.clubName.toUpperCase(),
+                            style: TextStyles.overline
+                                .copyWith(letterSpacing: 0.6),
+                          ),
+                          Text(
+                            _event.eventName,
+                            style: TextStyles.title.copyWith(
+                                color: AppColors.cardHeader,
+                                letterSpacing: 0.2),
+                          ),
+                          Text(
+                            '''${DateFormat.MMMd().format(_event.startDateTime)} • ${_event.location}''',
+                            style: TextStyles.body2.copyWith(
+                              color: AppColors.cardHeader60,
+                            ),
+                          ),
+                          Text(
+                            _event.otherDescription,
+                            style: TextStyles.body1
+                                .copyWith(color: AppColors.cardHeader60),
+                          ),
+                          Text(
+                            '🙌 ${_event.registrationCount} people are '
+                            'attending this',
+                            style: TextStyles.overline.copyWith(fontSize: 12.0),
+                          ),
+                        ],
                       ),
                     ),
-                    Expanded(
-                      flex: 4,
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 8.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Text(
-                              event.organizer.clubName.toUpperCase(),
-                              style: TextStyles.overline
-                                  .copyWith(letterSpacing: 0.6),
-                            ),
-                            Text(
-                              event.eventName,
-                              style: TextStyles.title.copyWith(
-                                  color: AppColors.cardHeader,
-                                  letterSpacing: 0.2),
-                            ),
-                            Text(
-                              '''${DateFormat.MMMd().format(event.startDateTime)} • ${event.location}''',
-                              style: TextStyles.body2.copyWith(
-                                color: AppColors.cardHeader60,
-                              ),
-                            ),
-                            Text(
-                              event.otherDescription,
-                              style: TextStyles.body1
-                                  .copyWith(color: AppColors.cardHeader60),
-                            ),
-                            Text(
-                              '🙌 ${event.registrationCount} people are '
-                              'attending this',
-                              style:
-                                  TextStyles.overline.copyWith(fontSize: 12.0),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
+<<<<<<< HEAD
                   ],
                 ),
+=======
+                  ),
+                ],
+>>>>>>> 9446f22 (Updated design in club page)
               ),
             ),
           ),
