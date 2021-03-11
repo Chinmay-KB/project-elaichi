@@ -113,7 +113,7 @@ class FakeApi implements Api {
       attendees: null,
       announcements: 'None',
       link: 'google.com',
-      picture: 'assets/images/dt_1.png',
+      picture: 'assets/images/dt22.png',
       location: 'LA-117',
     );
     clubDetails.events = List<Event>.generate(4, (index) => event);

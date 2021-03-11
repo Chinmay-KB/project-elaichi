@@ -9,8 +9,8 @@
          FlutterApplication and put your custom class here. -->
     <application
         android:name=".Elaichi"
-        android:icon="@mipmap/ic_launcher"
-        android:label="Avenue">
+        android:label="Avenue"
+        android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".ui.activities.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
